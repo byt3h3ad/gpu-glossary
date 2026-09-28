@@ -23,3 +23,20 @@ See [`LICENSE`](LICENSE) for details.
 ## Translations
 
 - [简体中文](https://github.com/miter6/gpu-glossary-zh)
+
+## PDF
+
+A printable PDF export of the whole glossary is generated automatically and
+published as a GitHub Release
+(https://github.com/byt3h3ad/gpu-glossary/releases) whenever this fork syncs
+new content from modal-labs/gpu-glossary
+(https://github.com/modal-labs/gpu-glossary). Grab the latest
+`gpu-glossary.pdf` from the Releases page
+(https://github.com/byt3h3ad/gpu-glossary/releases/latest).
+
+To build it yourself (install `uv` first, see
+https://docs.astral.sh/uv/getting-started/installation/):
+
+    uv run --with-requirements utils/requirements.txt python utils/build_pdf.py
+
+Output goes to `dist/gpu-glossary.pdf`.
