@@ -17,7 +17,7 @@ ROOT = HERE.parent
 
 PAGE_CSS = """
 @page {
-  size: Letter;
+  size: A4;
   margin: 1in 0.85in;
   @bottom-center { content: counter(page); font-size: 9pt; color: #666; }
 }
